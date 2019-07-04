@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript" src="script.js"></script>
+	<title>Piedra,Papel o Tijera</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+	<div id="nombre"> <h1>Piedra, Pepel o Tijera</h1></div>
+		<div id="table" ><center>  
+			
+				<table>   
+			  <tr>
+			    <th>Sack</th>
+			    <th>Usuario</th>
+			  </tr>
+			  <tr>
+			    <td><center>0</center></td>
+			    <td><center>0</center></td>
+				</tr>
+				</table>
+
+		</div></center>
+	<div id="juego">
+		 
+
+
+
+		<div onclick="usuario('0');" id="piedra"></div>
+        <div onclick="usuario('1');" id="papel"></div>
+        <div onclick="usuario('2');" id="tijera"></div>
+	</div>
+
+
+	<div id="efecto" style="display:none" onclick="quitarEfecto();"></div>
+
+
+<section id="tests">
+              <div id="content" >
+          
+              </div>
+            </section>
+            <script type="text/javascript">
+          
+            var objetos = {"Personas":[
+                {"nombre":"Wili"},
+                {"nombre":""}
+              ]};
+          
+            document.getElementById('content').innerHTML = objetos.Personas[1].nombre ;
+            /*Declarar un objeto JSON con una funcion en un atributo
+             notese el uso de "this" que hace referencia a el objeto en sí, es decir a persona*/
+            var persona = {"name":"Sack",
+                    "avisar":function(){alert("Hola soy "+ this.name +" bienvendio al juego. " );}
+                   };
+          
+            persona.avisar();
+            </script>
+
+</body>
+</html>
